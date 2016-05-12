@@ -1,0 +1,17 @@
+>>> import socket
+>>> s = socket.socket()
+>>> s.connect(("localhost", 5010))
+>>> s.send("jump")
+4
+>>> s.recv(1024)
+'Did you just tell me to: jump?'
+>>> s.send("sit")
+3
+>>> s.recv(1024)
+'Did you just tell me to: sit?'
+>>> s.send("kys")
+3
+>>> s.recv(1024)
+''
+>>> s.close()
+>>> 

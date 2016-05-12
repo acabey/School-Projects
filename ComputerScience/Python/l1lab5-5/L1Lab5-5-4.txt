@@ -1,0 +1,24 @@
+$ python L1Lab5-5-4.py
+Operating as client
+Enter a message to relay: this    
+Did you just tell me to: this ?
+Enter a message to relay: is
+Did you just tell me to: is?
+Enter a message to relay: a 
+Did you just tell me to: a?
+Enter a message to relay: test
+Did you just tell me to: test?
+Enter a message to relay: Quit
+$ python L1Lab5-5-4.py
+Operating as client
+Enter a message to relay: this
+Did you just tell me to: this?
+Enter a message to relay: is
+Did you just tell me to: is?
+Enter a message to relay: another
+Did you just tell me to: another?
+Enter a message to relay: test
+Did you just tell me to: test?
+Enter a message to relay: kys
+Connection has been closed by server
+$

@@ -1,0 +1,39 @@
+Enter a list of numbers in square brackets:
+[10,2,3,25,15]
+[2, 3, 10, 15, 25]
+Enter a list of numbers in square brackets:
+[25,3,15,2,10]
+[2, 3, 10, 15, 25]
+Enter a list of numbers in square brackets:
+[1,2,3,4,5]
+[1, 2, 3, 4, 5]
+Enter a list of numbers in square brackets:
+[5,4,3,2,1]
+[1, 2, 3, 4, 5]
+Enter a list of numbers in square brackets:
+[5,1,2,3,4]
+[1, 2, 3, 4, 5]
+Enter a list of numbers in square brackets:
+[2,3,4,5,1]
+[1, 2, 3, 4, 5]
+Enter a list of numbers in square brackets:
+[5,2,3,4,1]
+[1, 2, 3, 4, 5]
+Enter a list of numbers in square brackets:
+[2,1,4,3,6,5]
+[1, 2, 3, 4, 5, 6]
+Enter a list of numbers in square brackets:
+[1,1,1,1,1]
+[1, 1, 1, 1, 1]
+Enter a list of numbers in square brackets:
+[9,1,1,1,1]
+[1, 1, 1, 1, 9]
+Enter a list of numbers in square brackets:
+[9,9,9,9,1]
+[1, 9, 9, 9, 9]
+Enter a list of numbers in square brackets:
+[5]        
+[5]
+Enter a list of numbers in square brackets:
+[]
+

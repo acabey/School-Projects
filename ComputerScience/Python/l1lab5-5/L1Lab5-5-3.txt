@@ -1,0 +1,14 @@
+$ python L1Lab5-5-3.py
+Enter a message to relay: this is
+Did you just tell me to: this is?
+Enter a message to relay: a test
+Did you just tell me to: a test?
+Enter a message to relay: Quit
+$ python L1Lab5-5-3.py
+Enter a message to relay: Another
+Did you just tell me to: Another?
+Enter a message to relay: Test
+Did you just tell me to: Test?
+Enter a message to relay: Quit
+$  
+
