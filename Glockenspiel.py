@@ -39,7 +39,9 @@ def frequencyProduced(v, K, L, m):
 def lengthRequired(v, K, f, m):
 	from math import pi, sqrt
 	if m == 3: m = 3.012
-	return math.sqrt((math.pi*v*k*m**2)/8*f)
+	top = float(pi*v*K*pow(m,2))
+	bottom = float(8*f)
+	return sqrt(top/bottom)
 
 def radGyrationBar(thickness):
 	return thickness/3.46
@@ -48,21 +50,33 @@ def radGyrationPipe(radiusInner, radiusOuter):
 	return .5*math.sqrt((radiusInner**2)+(radiusOuter**2))
 
 #This is broken
+"""
 def frequencyNote(note, octave):
 	x=octave-1
 	y=note
 	a=2**x
 	b=1.059463**y
 	return = 275*a*b/10;
-    
+"""
+
 def pitch(freq):	
 	from math import log2, pow
-    h = round(12*log2(freq/C0))
-    octave = h // 12
-    n = h % 12
-    return pitches[n] + str(octave)
+	h = round(12*log2(freq/C0))
+	octave = h // 12
+	n = h % 12
+	return pitches[n] + str(octave)
 	
 
 if __name__ == '__main__':
-	for a in range(96, 104):
-		print str(chr(a).uppercase()) + lengthRequired(velocityMedium['Aluminium'], radGyrationBar(0.00635), frequencyNote(a))
+	desiredNotes = ['C7', 'C#7', 'D7', 'D#7', 'E7', 'F7', 'F#7', 'G7', 'G#7', 'A7', 'A#7', 'B7', 'C8', 'C#8','D8', 'D#8', 'E8']
+	desiredFreqs = [2093, 2217.46, 2349.32, 2489.02, 2637.02, 2793.83, 2959.96, 3135.96, 3322.44, 3520.00, 3729.31, 3951.07, 4186.01, 4434.92, 4698.63, 4978.03, 5274.04]
+	#output = [0.1087740828685471, 0.10567740667430857, 0.10266891121583085, 0.09974608326590563, 0.09690659466597884, 0.09414777399901017, 0.09146756618168685, 0.08886378086803991, 0.08633392208046284, 0.08387619344505425, 0.08148840204096675, 0.07916854847192305, 0.07691479974227595, 0.07472521087761211, 0.07259796059202207, 0.07053120271649775, 0.06852331023000975]
+
+	output = [] 
+	#print str(len(desiredNotes)), str(len(desiredFreqs))
+	K = 0.0047625/3.46
+	for freq in desiredFreqs:
+		output.append(round(lengthRequired(5050, K, freq, 3.012)*100,3))
+	print len(output)
+	print sum(output)
+	print output
